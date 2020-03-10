@@ -53,14 +53,7 @@ struct ContentView: View {
                         .font(.subheadline)
                         .fontWeight(.light)
                 }
-                 HStack(){
-                    Text("Need: ")
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                    Text("cat climbing tree")
-                        .font(.subheadline)
-                        .fontWeight(.light)
-                }
+                 
             }
             
         }
@@ -72,3 +65,16 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+/*
+ HStack(){
+     Text("Need: ")
+         .font(.subheadline)
+         .fontWeight(.bold)
+     Text("cat climbing tree")
+         .font(.subheadline)
+         .fontWeight(.light)
+ }
+ 
+ */

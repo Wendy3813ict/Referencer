@@ -13,13 +13,7 @@ struct ContentView: View {
         
         // add image
         VStack() {
-            VStack(){
-                Image("cat")
-                .resizable()
-                    .frame(width: 420, height: 300)
-                
-                .shadow(radius: 15)
-            }
+            
             
             // add title & sub-heading
             VStack() {
@@ -72,3 +66,14 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+/*
+ 
+ VStack(){
+     Image("cat")
+     .resizable()
+         .frame(width: 420, height: 300)
+     
+     .shadow(radius: 15)
+ }
+ */

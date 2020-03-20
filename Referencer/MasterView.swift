@@ -13,7 +13,7 @@ struct MasterView: View {
     var body: some View {
         List{
             ForEach(0..<catList.cats.count){i in
-                NavigationLink (destination: DetailView(cat:        // destination will take to detailView after clicking on a cat
+                NavigationLink (destination: DetailView(cat:        // when click the pet, it will show related informaion (means to will retun to DetailView)
                     self.catList.cats[i])){
                         HStack{
                             Image("\(self.catList.cats[i].name)")

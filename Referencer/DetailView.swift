@@ -13,7 +13,7 @@ struct DetailView: View {
     var body: some View {
         
         VStack() {
-            Image("\(cat.name)")
+            Image("\(cat.breed)")
             
             VStack(){
                 Text("\(cat.type)")
@@ -24,8 +24,8 @@ struct DetailView: View {
                  Text("\(cat.name)")
                     .font(.subheadline)
                     .fontWeight(.light)
-                    .padding(.bottom, 40)
-            }.frame(width: 300, alignment: .leading)
+                    .padding(.bottom, 30)
+            }.frame(width: 280, alignment: .leading)
                 
             
             

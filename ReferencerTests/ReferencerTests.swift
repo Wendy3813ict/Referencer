@@ -22,14 +22,18 @@ class ReferencerTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let name = "Wendy Yu"
-        let age = 20
-        let id = 123
-        let yu = Staff(name: name, age: age, sNumber: id)
-        XCTAssert(yu.name == name)
-        XCTAssertEqual(yu.name, name)
-        XCTAssertEqual(yu.age, age)
-        XCTAssertEqual(yu.sNumber, id)
+        let type = "Pet"
+        let name = "cat"
+        let breed = "ragdoll"
+        let character = "docile"
+        let lifetime = 15-20
+        
+        let test_values = Cat(type, name, breed, character, lifetime)
+        XCTAssertEqual(test_values.type, type)
+        XCTAssertEqual(test_values.name, name)
+        XCTAssertEqual(test_values.breed, breed)
+        XCTAssertEqual(test_values.character, character)
+        XCTAssertEqual(test_values.lifetime, lifetime)
     }
 
     func testPerformanceExample() {

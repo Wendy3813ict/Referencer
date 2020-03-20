@@ -16,7 +16,7 @@ struct MasterView: View {
                 NavigationLink (destination: DetailView(cat:        // when click the pet, it will show related informaion (means to will retun to DetailView)
                     self.catList.cats[i])){
                         HStack{
-                            Image("\(self.catList.cats[i].name)")
+                            Image("\(self.catList.cats[i].breed)")
                                 .resizable().frame(width: 120, height: 120)
                             Text("\(self.catList.cats[i].type)").bold()
                             Text("\(self.catList.cats[i].name)")

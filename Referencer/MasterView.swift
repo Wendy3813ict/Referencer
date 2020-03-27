@@ -22,6 +22,9 @@ struct MasterView: View {
                             Text("\(self.catList.cats[i].name)")
                         }
                 }
+                    // add edit button
+                    .navigationBarTitle(Text("Notes:"))
+                    .navigationBarItems(trailing: EditButton())
             }
         }
     }

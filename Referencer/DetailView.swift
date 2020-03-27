@@ -12,6 +12,7 @@ struct DetailView: View {
     var cat: Cat
     var body: some View {
         
+        
         VStack() {
             Image("\(cat.breed)")
             

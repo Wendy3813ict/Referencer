@@ -8,5 +8,4 @@
 
 class CatList{
     var cats: [Cat] = []
-
 }

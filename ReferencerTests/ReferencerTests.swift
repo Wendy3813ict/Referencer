@@ -23,7 +23,7 @@ class ReferencerTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        /*
+        
         let type = "Pet"
         let name = "cat"
         let breed = "ragdoll"
@@ -37,10 +37,26 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(test_values.breed, breed)
         XCTAssertEqual(test_values.character, character)
         XCTAssertEqual(test_values.lifetime, lifetime)
-         */
+        
     }
 
-    func testCatList() {
+    func testCatList(){
+        let cat1 = Cat("Pet","cat","ragdoll","docile","15-20")
+        let cat2 = Cat("Pet","cat","British shorthair","docile","15-20")
+        let cats: [Cat] = [cat1,cat2]
+        XCTAssertNotNil(cats[0].type)
+        XCTAssertNotNil(cats[0].name)
+        XCTAssertNotNil(cats[0].breed)
+        XCTAssertNotNil(cats[0].character)
+        XCTAssertNotNil(cats[0].lifetime)
+        
+        XCTAssertEqual(2, cats.count)
+    }
+    
+    
+    
+    
+    func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.

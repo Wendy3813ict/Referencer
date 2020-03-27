@@ -6,6 +6,7 @@
 //  Copyright © 2020 Wendy Yu. All rights reserved.
 //
 
+// cat properties and the initializer
 class Cat{
     var type: String = ""
     var name: String = ""

@@ -12,8 +12,9 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var catList = CatList()
     
+    let catList = CatList()
+    var starArray: CatList = CatList()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -22,11 +23,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         
-        catList.cats.append(Cat("PET","cat","ragdoll","docile","15-20"))
-        catList.cats.append(Cat("PET","cat","British shorthair","docile","15-20"))
-        catList.cats.append(Cat("PET","cat","Persian cat","docile","13-17"))
-        catList.cats.append(Cat("PET","cat","American Bobtail","docile","10-15"))
-        catList.cats.append(Cat("PET","cat","Scottish Fold","docile","13-17"))
+        catList.cats.append(Cat("PET","cat","ragdoll","docile","15-20", ""))
+        catList.cats.append(Cat("PET","cat","British shorthair","docile","15-20", ""))
+        catList.cats.append(Cat("PET","cat","Persian cat","docile","13-17",""))
+        catList.cats.append(Cat("PET","cat","American Bobtail","docile","10-15",""))
+        catList.cats.append(Cat("PET","cat","Scottish Fold","docile","13-17",""))
         
         
         let contentView = ContentView(catList: catList)

@@ -12,13 +12,15 @@ class Cat{
     var breed: String = ""
     var character: String = ""
     var lifetime: String = ""
+    var notes: String = ""
 
-    init(_ catType:String, _ catName:String, _ catBreed:String, _ catCharacter:String, _ catLifetime:String){
+    init(_ catType:String, _ catName:String, _ catBreed:String, _ catCharacter:String, _ catLifetime:String,_ catNotes:String){
         type = catType
         name = catName
         breed = catBreed
         character = catCharacter
         lifetime = catLifetime
+        notes = catNotes
     }
 
 }

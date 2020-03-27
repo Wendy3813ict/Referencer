@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MasterView: View {
     var catList: CatList
+    
     var body: some View {
         List{
             ForEach(0..<catList.cats.count){i in
@@ -21,6 +22,8 @@ struct MasterView: View {
                             Text("\(self.catList.cats[i].type)").bold()
                             Text("\(self.catList.cats[i].name)")
                         }
+                        //.onDelete(perform:delete)
+                        //.onMove(perform:move)
                 }
                     // add edit button
                     .navigationBarTitle(Text("Notes:"))

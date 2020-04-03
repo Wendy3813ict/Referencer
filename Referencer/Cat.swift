@@ -15,7 +15,7 @@ class Cat{
     var lifetime: String = ""
     var notes: String = ""
 
-    init(_ catType:String, _ catName:String, _ catBreed:String, _ catCharacter:String, _ catLifetime:String,_ catNotes:String){
+    init(_ catType:String, _ catName:String, _ catBreed:String, _ catCharacter:String, _ catLifetime:String, _ catNotes:String){
         type = catType
         name = catName
         breed = catBreed

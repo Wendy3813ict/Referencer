@@ -21,20 +21,32 @@ struct MasterView: View {
                             self.catList.cats[i])){
                                 HStack{
                                     Image("\(self.catList.cats[i].breed)")
-                                        .resizable().frame(width: 120, height: 120)
+                                        .resizable().frame(width: 70, height: 70)
                                     Text("\(self.catList.cats[i].type)").bold()
                                     Text("\(self.catList.cats[i].name)")
                                 }
                         }
                     }
+                        
                         .onDelete(perform:delete)
 //                        .onMove(perform:move)
             }
-                // add edit button
-                            .navigationBarTitle(Text("Notes:"))
-                            .navigationBarItems(trailing: EditButton())
+                        // add edit button
+                        .navigationBarItems(leading: EditButton())
+                           
                     }
                 }
+    
+//    private var addButton: some View{
+//        switch CatList {
+//        case .inactive:
+//            return AnyView(Button(action: onAdd){Image(systemName: "plus")})
+//        default:
+//            return AnyView(EmptyView())
+//        }
+//    }
+    
+            
                 func delete(at offsets: IndexSet){
 //                    print("cat")
 //                    if let first = offsets.first{
@@ -52,16 +64,10 @@ struct MasterView: View {
 //                    }
 //                func add(){
 //                    let maxID = catList.map($0.id).max() + 1
-//                    let item = CatList(id: maxID, breed: "new breed", )
+//                    let cat = CatList(id: maxID, breed: "new breed")
 //                }
 //                }
 //            }
 
                     }
                 }
-
-struct MasterView_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
